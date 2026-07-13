@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JAGTIAL DISTRICT - MALLAPUR MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" class="logo">
+
+<div class="title">
+<h1>JAGTIAL DISTRICT</h1>
+<h2>MALLAPUR MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" class="logo">
+
+</header>
+
+<div class="search-box">
+<input type="text" id="search" placeholder="Search Place..." onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+
+<!--1-->
+<div class="place">
+<div class="left">
+<div class="icon">📮</div>
+<div class="info">
+<h3>JL-MP- POST OFFICE</h3>
+<p>Post Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96668,78.71391" target="_blank">Open Map</a>
+</div>
+
+<!--2-->
+<div class="place">
+<div class="left">
+<div class="icon">🏦</div>
+<div class="info">
+<h3>JL-MP- ANDHRA BANK</h3>
+<p>Bank</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96911,78.70337" target="_blank">Open Map</a>
+</div>
+
+<!--3-->
+<div class="place">
+<div class="left">
+<div class="icon">🛒</div>
+<div class="info">
+<h3>JL-MP-SUPER MARKET</h3>
+<p>Super Market</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96889,78.70321" target="_blank">Open Map</a>
+</div>
+
+<!--4-->
+<div class="place">
+<div class="left">
+<div class="icon">🏛️</div>
+<div class="info">
+<h3>JL-MP- MANDAL PRAJA PARISHAD</h3>
+<p>Government Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96816,78.70297" target="_blank">Open Map</a>
+</div>
+
+<!--5-->
+<div class="place">
+<div class="left">
+<div class="icon">🚌</div>
+<div class="info">
+<h3>JL-MP- BUS STOP</h3>
+<p>Bus Stop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96733,78.70605" target="_blank">Open Map</a>
+</div>
+<!--6-->
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+<div class="info">
+<h3>JL-MP- MALLANNA TEMPLE</h3>
+<p>Temple</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96668,78.71391" target="_blank">Open Map</a>
+</div>
+
+<!--7-->
+<div class="place">
+<div class="left">
+<div class="icon">⚡</div>
+<div class="info">
+<h3>JL-MP- 33/11 KV SUBSTATION</h3>
+<p>Electrical Substation</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96016,78.70438" target="_blank">Open Map</a>
+</div>
+
+<!--8-->
+<div class="place">
+<div class="left">
+<div class="icon">🏫</div>
+<div class="info">
+<h3>JL-MP- TS MODEL SCHOOL & COLLEGE</h3>
+<p>School / College</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.9826,78.70109" target="_blank">Open Map</a>
+</div>
+
+<!--9-->
+<div class="place">
+<div class="left">
+<div class="icon">🏛️</div>
+<div class="info">
+<h3>JL-MP-TAHSILDAR OFFICE</h3>
+<p>Government Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96758,78.70219" target="_blank">Open Map</a>
+</div>
+
+<!--10-->
+<div class="place">
+<div class="left">
+<div class="icon">🚰</div>
+<div class="info">
+<h3>JL-MP-OVERHEAD WATER TANK</h3>
+<p>Water Tank</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96734,78.70277" target="_blank">Open Map</a>
+</div>
+
+<!--11-->
+<div class="place">
+<div class="left">
+<div class="icon">⛽</div>
+<div class="info">
+<h3>JL-MP- SOMESWARA FILLING</h3>
+<p>Petrol Pump</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.9638,78.70694" target="_blank">Open Map</a>
+</div>
+
+<!--12-->
+<div class="place">
+<div class="left">
+<div class="icon">⛽</div>
+<div class="info">
+<h3>JL-MP- INDIAN OIL</h3>
+<p>Petrol Pump</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96381,78.70679" target="_blank">Open Map</a>
+</div>
+
+<!--13-->
+<div class="place">
+<div class="left">
+<div class="icon">🏥</div>
+<div class="info">
+<h3>JL-MP- CIVIL HOSPITAL</h3>
+<p>Hospital</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96411,78.70676" target="_blank">Open Map</a>
+</div>
+
+<!--14-->
+<div class="place">
+<div class="left">
+<div class="icon">🛠️</div>
+<div class="info">
+<h3>JL-MP-SADULLA BIKE MECHANIC</h3>
+<p>Mechanic Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96404,78.70653" target="_blank">Open Map</a>
+</div>
+
+<!--15-->
+<div class="place">
+<div class="left">
+<div class="icon">🛞</div>
+<div class="info">
+<h3>JL-MP- SRI RAJARAJESHWARI TYRES</h3>
+<p>Tyre Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96449,78.70628" target="_blank">Open Map</a>
+</div>
+<!--16-->
+<div class="place">
+<div class="left">
+<div class="icon">💊</div>
+<div class="info">
+<h3>JL-MP-RAMANAJANEYA HUMAN & VETERINARY MEDICAL</h3>
+<p>Medical Store</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96624,78.70636" target="_blank">Open Map</a>
+</div>
+
+<!--17-->
+<div class="place">
+<div class="left">
+<div class="icon">🍬</div>
+<div class="info">
+<h3>JL-MP- BALAJI SRI SWEET HOUSE</h3>
+<p>Sweet Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96648,78.70610" target="_blank">Open Map</a>
+</div>
+
+<!--18-->
+<div class="place">
+<div class="left">
+<div class="icon">🏪</div>
+<div class="info">
+<h3>JL-MP- ROLON SEALS</h3>
+<p>Business / Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96874,78.70341" target="_blank">Open Map</a>
+</div>
+
+<!--19-->
+<div class="place">
+<div class="left">
+<div class="icon">✂️</div>
+<div class="info">
+<h3>JL-MP-NARESH TALIOR</h3>
+<p>Tailor Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96952,78.70280" target="_blank">Open Map</a>
+</div>
+
+<!--20-->
+<div class="place">
+<div class="left">
+<div class="icon">🌊</div>
+<div class="info">
+<h3>JL-MP- ELLAMMA CHERUVU</h3>
+<p>Lake / Cheruvu</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96545,78.69571" target="_blank">Open Map</a>
+</div>
+
+<!--21-->
+<div class="place">
+<div class="left">
+<div class="icon">🎓</div>
+<div class="info">
+<h3>JL-MP- GOVT JUNIOR COLLEGE</h3>
+<p>College</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96087,78.70103" target="_blank">Open Map</a>
+</div>
+
+<!--22-->
+<div class="place">
+<div class="left">
+<div class="icon">🌾</div>
+<div class="info">
+<h3>JL-MP- LAXMI NARASIMHA RICE MILL</h3>
+<p>Rice Mill</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.97271,78.70261" target="_blank">Open Map</a>
+</div>
+
+<!--23-->
+<div class="place">
+<div class="left">
+<div class="icon">🌊</div>
+<div class="info">
+<h3>JL-MP- DURGAMMA CHERUVU</h3>
+<p>Lake / Cheruvu</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.97207,78.70162" target="_blank">Open Map</a>
+</div>
+
+<!--24-->
+<div class="place">
+<div class="left">
+<div class="icon">💊</div>
+<div class="info">
+<h3>JL-MP-WAITHA PHARMACY</h3>
+<p>Pharmacy</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.96949,78.70304" target="_blank">Open Map</a>
+</div>
+
+<!--25-->
+<div class="place">
+<div class="left">
+<div class="icon">⛰️</div>
+<div class="info">
+<h3>JL-MP-GRADDALA GUTTA</h3>
+<p>Hill / Gutta</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=18.99140,78.70329" target="_blank">Open Map</a>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Jagtial District - Mallapur Mandal</p>
+<p>Developed using OU & OTBI Project Template</p>
+</footer>
+
+<script>
+function searchPlaces(){
+let input=document.getElementById("search").value.toLowerCase();
+let places=document.getElementsByClassName("place");
+for(let i=0;i<places.length;i++){
+let text=places[i].innerText.toLowerCase();
+places[i].style.display=text.indexOf(input)>-1?"flex":"none";
+}
+}
+</script>
+
+</body>
+</html>
